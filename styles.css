@@ -1,0 +1,253 @@
+:root {
+    -webkit-text-fill-color: black;
+    --link-color: #aa7b56;
+    --backhground-color: #eeeff1;
+}
+
+body {
+    background: radial-gradient(circle, #ecccb2, #ece4ee);
+    background-size: 300% 300%;
+	animation: gradient 13s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} 
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html{
+    scroll-behavior: smooth; 
+}
+
+body{
+    font-family: 'Arima', sans-serif;
+    background-color: var(--backhground-color);
+    padding-bottom: 10px;
+}
+
+a {
+color: var(--link-color);
+text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left a{
+    color: var(--text-color);
+    font-size: 38px;
+    font-weight: 700;
+}
+
+nav .right a{
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+nav .right a:last-child {
+    color: var(--backhground-color);
+    background-color: var(--text-color);
+    /* padding: 15px; */
+    border-radius: 5px;
+}
+
+/* About me */
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.about-section .text{
+    flex: 5;
+    font-size: 20px;
+}
+
+.about-section .text h2{
+    font-size: 38px;
+}
+
+.about-section .text .links{
+    margin-top: 30px;
+}
+
+.about-section .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+    color: black;
+}
+
+.about-section .text .links a:hover{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+    color: var(--link-color);
+}
+
+.about-section .headshot{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.about-section .headshot img{
+    width: 320px;
+    border-radius: 20%;
+    object-fit: contain;
+}
+
+/* My Projects */ 
+
+.project-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.project-section h2{
+    font-size: 38px;
+}
+
+.project-section .group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.project-section .group .person-details {
+    text-align: center;
+    flex: 2;
+}
+
+.project-row {
+    margin-top: 35px;
+    display: flex;
+    gap: 28;
+}
+
+.project-row img {
+    width: 25em;
+    object-fit: contain;
+    height: 28em;
+}
+
+.project-row2 {
+    margin-top: 65px;
+    display: flex;
+    gap: 28px;
+}
+
+.project-row2 img {
+    width: 25em;
+    object-fit: contain;
+    height: 28em;
+}
+
+
+/* Contact */
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    margin-top: 170px;
+}
+
+.contact-section h2{
+    font-size: 38px;
+}
+.contact-section .group {
+    display: flex;
+}
+
+.contact-section .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+    max-width: 550px;
+    margin-top: 10px;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+    font-family: 'Arima', sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form button {
+    font-size: 20px;
+    color:#eeeff1;
+    background-color: var(--link-color);
+    border: none; 
+    height: 50px;
+    cursor: pointer; 
+    transition: .1s;
+}
+
+.contact-section .group form button:hover {
+    filter: brightness(.9);
+} 
+
+
+@media (max-width: 850px){
+.about-section .text h2{
+    font-size: 30px;
+}
+}
+
+@media (max-width:600px){
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 22px;
+    }
+
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+}
