@@ -22,15 +22,23 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
-
+    I included an about section, project section and contact section, as well headers for each one.
+    I made easy to navigate and showcased some of my previous projects that I have done on figma. 
+    I implemented links and images. 
 
 
 (b) CSS features
-
+    I added a gradient to my background so it transitions within two colors. 
+    When you hover over buttons it will change to a different color. 
+    I used a different font and I set a specific text color and link color.  
+    I set the margins, hight, width, border radius, and other elements to make the images 
+    on the site fit well. 
 
 
 (c) Advanced features
-
+    I made clickable buttons that will take you to that website. 
+    I incorportated hover effects and smooth scrolling/transitions on the screen. 
+    I made my background gradient.    
 
 
 3. How long, in hours, did it take you to complete this assignment?
@@ -38,11 +46,10 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 
 4. What online resources did you consult when completing this assignment? (list specific URLs)
-
-
+    I used this link: https://www.w3schools.com/html/html_css.asp to help me with my assignment. 
 
 5. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
-    I asked my friend if the background color I chose for my portfolio looks good. 
+    I asked my friend who is not in the class if my website was functioning well. 
 
 
 6. Is there anything special we need to know in order to run your code?
