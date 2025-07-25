@@ -1,11 +1,11 @@
 :root {
     -webkit-text-fill-color: black;
-    --link-color: #aa7b56;
+    --link-color: #c48ca9;
     --backhground-color: #eeeff1;
 }
 
 body {
-    background: radial-gradient(circle, #ecccb2, #ece4ee);
+    background: radial-gradient(circle, #d4aabf, #ece4ee);
     background-size: 300% 300%;
 	animation: gradient 13s ease infinite;
 	height: 100vh;
@@ -22,7 +22,6 @@ body {
 		background-position: 0% 50%;
 	}
 } 
-
 
 *{
     margin: 0;
@@ -50,27 +49,61 @@ nav {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    top: 20px;
+    right: 20px;
     padding: 0 50px;
     height: 80px;
+    position: absolute;
 }
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    /* border-radius: 0; */
+    /* display: inline-block; */
+  }
+  
+  .nav-links a:hover {
+    color: #c48ca9;
+  }
 
-nav .left a{
-    color: var(--text-color);
-    font-size: 38px;
+  .nav-links a.active {
+    color: #c48ca9;
+  }
+  
+
+ /* Home */ 
+/* .home-hero .flower img{
+    flex: 2;
+    display: flex;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.95;
+} */
+    
+   
+ .home-hero {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+  }
+  
+  .name-title {
+    font-size: 4rem;
     font-weight: 700;
-}
-
-nav .right a{
-    color: var(--text-color);
-    margin: 0 10px;
-}
-
-nav .right a:last-child {
-    color: var(--backhground-color);
-    background-color: var(--text-color);
-    /* padding: 15px; */
-    border-radius: 5px;
-}
+    margin: 0;
+  }
 
 /* About me */
 .about-section{
@@ -85,7 +118,7 @@ nav .right a:last-child {
 
 .about-section .text{
     flex: 5;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .about-section .text h2{
@@ -122,6 +155,7 @@ nav .right a:last-child {
     flex: 2;
     display: flex;
     justify-content: right;
+    margin-top: 68px;
 }
 
 .about-section .headshot img{
@@ -135,6 +169,7 @@ nav .right a:last-child {
 .project-section {
     padding: 0 50px;
     margin-bottom: 100px;
+    margin-top: 40px;
 }
 
 .project-section h2{
@@ -153,31 +188,37 @@ nav .right a:last-child {
 }
 
 .project-row {
-    margin-top: 35px;
     display: flex;
-    gap: 28;
+    gap: 20px;
 }
 
 .project-row img {
-    width: 25em;
+    width: 29em;
     object-fit: contain;
-    height: 28em;
+    height: 20em;
 }
 
 .project-row2 {
-    margin-top: 65px;
     display: flex;
-    gap: 28px;
+    gap: 20px;
 }
 
 .project-row2 img {
-    width: 25em;
+    width: 29em;
     object-fit: contain;
-    height: 28em;
+    height: 20em;
+}
+.project-row3 {
+    display: flex;
 }
 
-
-/* Contact */
+.project-row3 img {
+    width: 20em;
+    object-fit: contain;
+    height: 20em;
+    margin-bottom: 40px;
+}
+/* Contact
 .contact-section {
     padding: 0 50px;
     margin-bottom: 100px;
@@ -186,9 +227,11 @@ nav .right a:last-child {
 
 .contact-section h2{
     font-size: 38px;
+    margin-bottom: 20px;
 }
 .contact-section .group {
     display: flex;
+    justify-content: center;
 }
 
 .contact-section .group form{
@@ -223,10 +266,9 @@ nav .right a:last-child {
 
 .contact-section .group form button:hover {
     filter: brightness(.9);
-} 
+}  */
 
-
-@media (max-width: 850px){
+/* @media (max-width: 850px){
 .about-section .text h2{
     font-size: 30px;
 }
@@ -250,4 +292,4 @@ nav .right a:last-child {
     nav .right a span {
         display: none;
     }
-}
+} */
