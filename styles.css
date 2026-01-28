@@ -1,11 +1,11 @@
 :root {
     -webkit-text-fill-color: black;
-    --link-color: #c48ca9;
+    --link-color: #b7c3ea;
     --backhground-color: #eeeff1;
 }
 
 body {
-    background: radial-gradient(circle, #d4aabf, #ece4ee);
+    background: radial-gradient(circle, #b7c3ea, #ece4ee);
     background-size: 300% 300%;
 	animation: gradient 13s ease infinite;
 	height: 100vh;
@@ -66,11 +66,11 @@ nav {
   }
   
   .nav-links a:hover {
-    color: #c48ca9;
+    color: #b7c3ea;
   }
 
   .nav-links a.active {
-    color: #c48ca9;
+    color: #b7c3ea;
   }
   
 
@@ -249,7 +249,7 @@ nav {
 
 .project-text2 {
         padding: 15px 300px;
-        background-color: #daa1bc;
+        background-color: #b7c3ea;
         border-radius: 12px;
         padding: 15px;
         margin-left: 60px;
@@ -269,7 +269,7 @@ nav {
 
 .project-text3 {
     padding: 15px 300px;
-    background-color: #daa1bc;
+    background-color: #b7c3ea;
     border-radius: 12px;
     padding: 15px;
     margin-left: 60px;
@@ -303,7 +303,7 @@ nav {
 
 .project-text4 {
     padding: 15px 300px;
-    background-color: #daa1bc;
+    background-color: #b7c3ea;
     border-radius: 12px;
     padding: 15px;
     margin-left: 50px;
@@ -311,7 +311,7 @@ nav {
 
 .about-text{
     padding: 15px 300px;
-    background-color: #daa1bc;
+    background-color: #b7c3ea;
     border-radius: 12px;
     padding: 15px;
     margin-left: 50px;
