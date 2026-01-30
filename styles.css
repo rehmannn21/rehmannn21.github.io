@@ -1,11 +1,11 @@
 :root {
     -webkit-text-fill-color: black;
-    --link-color: #b7c3ea;
-    --backhground-color: #eeeff1;
+    --link-color: #afdef0;
+    --backhground-color: #d7e6ee;
 }
 
 body {
-    background: radial-gradient(circle, #b7c3ea, #ece4ee);
+    /* background: radial-gradient(circle, #afdef0, #ece4ee); */
     background-size: 300% 300%;
 	animation: gradient 13s ease infinite;
 	height: 100vh;
@@ -66,22 +66,13 @@ nav {
   }
   
   .nav-links a:hover {
-    color: #b7c3ea;
+    color: #010101;
   }
 
   .nav-links a.active {
     color: #b7c3ea;
   }
   
-
- /* Home */ 
-/* .home-hero .flower img{
-    flex: 2;
-    display: flex;
-    background-position: center;
-    background-attachment: fixed;
-    opacity: 0.95;
-} */
     
    
  .home-hero {
@@ -249,7 +240,7 @@ nav {
 
 .project-text2 {
         padding: 15px 300px;
-        background-color: #b7c3ea;
+        background-color: #ecd5e0;
         border-radius: 12px;
         padding: 15px;
         margin-left: 60px;
@@ -269,7 +260,7 @@ nav {
 
 .project-text3 {
     padding: 15px 300px;
-    background-color: #b7c3ea;
+    background-color: #aadbd1;
     border-radius: 12px;
     padding: 15px;
     margin-left: 60px;
@@ -303,33 +294,72 @@ nav {
 
 .project-text4 {
     padding: 15px 300px;
-    background-color: #b7c3ea;
+    background-color: #e3d7af;
     border-radius: 12px;
     padding: 15px;
     margin-left: 50px;
+}
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.project-row2{
+    cursor: pointer; 
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.project-row2:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+.project-row2 img{
+    transition: transform 0.25s ease;
+}
+.project-row2:hover img{
+    transform: scale(1.03);
+}
+.project-row3{
+    cursor: pointer; 
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.project-row3:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+.project-row3 img{
+    transition: transform 0.25s ease;
+}
+.project-row3:hover img{
+    transform: scale(1.03);
+}
+.project-row4{
+    cursor: pointer; 
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.project-row4:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+.project-row4 img{
+    transition: transform 0.25s ease;
+}
+.project-row4:hover img{
+    transform: scale(1.03);
 }
 
-.about-text{
+/* .about-text{
     padding: 15px 300px;
-    background-color: #b7c3ea;
+    background-color: #afdef0;
     border-radius: 12px;
     padding: 15px;
     margin-left: 50px;
-}
+} */
 
 .about-text h2 {
  font-size: 61px;
 }
 
-
-  
- 
-  /* .project.reverse {
-    flex-direction: row-reverse;
-  } */
-  
-  
-/* Contact
+/* Contact */
 .contact-section {
     padding: 0 50px;
     margin-bottom: 100px;
@@ -379,28 +409,178 @@ nav {
     filter: brightness(.9);
 }  */
 
-/* @media (max-width: 850px){
-.about-section .text h2{
-    font-size: 30px;
+.contact-bubble {
+    font-family: 'Arima', sans-serif;
+    border: 2px solid var(--link-color);
+    color: var(--text-color);
+    padding: 25px 40px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 15px;
+    transition: all 0.25s ease;
+  }
+  
+  .contact-bubble:hover {
+    background-color: var(--link-color);
+    color: #eeeff1;
+    transform: translateY(-4px) scale(1.05);
+  }
+
+/* =========================
+   PROJECT CASE STUDY PAGE
+========================= */
+
+.project-page {
+    padding-top: 120px;
 }
+
+/* Hero */
+.project-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-right: 400px;
+    padding-left: 400px;
 }
 
-@media (max-width:600px){
-    nav {
-        padding: 0 20px;
-    }
+.project-hero h1 {
+    font-size: 170%;
+}
 
-    nav .right a {
-        font-size: 22px;
-    }
+.project-subtitle {
+    font-size: 190%;
+    color: #555;
+    max-width: 420px;
+    margin: 0;
+    text-align: left;
+    
+}
 
-    nav .right a:last-child {
-        color: var(--text-color);
-        background-color: transparent;
-        padding: 0;
-    }
+/* Body */
+.project-body {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 
-    nav .right a span {
-        display: none;
-    }
+}
+
+/* Info boxes (reuse your style language) */
+/* .project-info-box {
+    background-color: #b7c3ea;
+    border-radius: 12px;
+    padding: 25px;
+} */
+
+.project-info-box h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.project-info-box p {
+    font-size: 18px;
+}
+
+/* Images */
+.project-images-case {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: right;
+    position: relative;
+    right: 110px;
+  
+}
+.project-images-case img {
+    height: 320px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin-top: -197px;
+  
+}
+.project-images-case img{
+    transition: transform 0.25s ease;
+}
+.project-images-case:hover img{
+    transform: scale(1.03);
+}
+
+.project-hero1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-right: 500px;
+    padding-left: 500px;
+}
+
+
+/* .project-hero1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-right: 500px;
+    padding-left: 500px;
+}
+
+.project-hero1 h1 {
+    font-size: 150%;
+}
+
+.project-subtitle {
+    font-size: 190%;
+    color: #555;
+    max-width: 420px;
+    margin: 0;
+    text-align: left;
+    
+} */
+/*body*/
+
+/* .project-body1 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 50px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.project-info-box1 h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.project-info-box1 p {
+    font-size: 18px;
+} */
+
+/* Images */
+/* .project-images-case1 {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: right;
+    position: relative;
+    right: 90px;
+  
+}
+.project-images-case1 img {
+    height: 320px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin-top: -170px;
+  
+}
+.project-images-case1 img{
+    transition: transform 0.25s ease;
+}
+.project-images-case1:hover img{
+    transform: scale(1.03);
 } */

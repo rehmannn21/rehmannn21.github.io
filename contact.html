@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Nawal Rehman" />
+  <title>Contact | Nawal Rehman</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Arima:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Your main CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Contact-specific styles -->
+  <style>
+    :root {
+      --link-color: #ec8f8f;   /* adjust if needed */
+      --text-color: #1f2937;
+    }
+
+    body {
+      font-family: 'Arima', sans-serif;
+      background-color: #d7e6ee;
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact-section {
+      padding: 0 50px;
+      margin-top: 170px;
+      margin-bottom: 100px;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      font-size: 38px;
+      margin-bottom: 40px;
+    }
+
+    .contact-section .group {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .contact-bubble {
+      border: 2px solid var(--link-color);
+      color: var(--text-color);
+      padding: 25px 45px;
+      border-radius: 999px;
+      font-size: 20px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      background-color: transparent;
+    }
+
+    .contact-bubble:hover {
+      background-color: var(--link-color);
+      color: #eeeff1;
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 600px) {
+      .contact-section {
+        padding: 0 20px;
+      }
+
+      .contact-bubble {
+        width: 100%;
+        max-width: 260px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+        <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="myprojects.html" class="active">My Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <section class="contact-section">
+    <h2>Let’s Connect 💌</h2>
+
+    <div class="group">
+      <a
+        href="https://www.linkedin.com/in/nawal-rehman-740a55330/"
+        target="_blank"
+        class="contact-bubble"
+      >
+        LinkedIn
+      </a>
+
+      <!-- <a
+        href="assets/Resume.dox.pdf"
+        target="_blank"
+        class="contact-bubble"
+      >
+        Resume
+      </a> -->
+    </div>
+  </section>
+
+</body>
+</html>
