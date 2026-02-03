@@ -27,9 +27,9 @@
             <a href="myprojects.html" class="dropdown-toggle">My Projects ▾</a>
       
             <div class="dropdown-menu">
-              <a href="crowdy.html">Crowdy</a>
-              <a href="bentobuddy.html">BentoBuddy</a>
-              <a href="paintpals.html">PaintPals</a>
+              <a href="crowdy.html">Crowdy </a>
+              <a href="bentobuddy.html">BentoBuddy </a>
+              <a href="paintpals.html">PaintPals </a>
             </div>
         </div> 
           <a href="about.html">About</a>
@@ -38,23 +38,42 @@
       </nav>
 
       <!-- HERO -->
-  <section class="project-hero1">
+<section class="project-hero1">
     <div class="project-hero-text1">
-    <p>BentoBuddy</p>
-    <h1 class="project-subtitle1">
+      <p>BentoBuddy</p>
+      <h1 class="project-subtitle1">
         Helps commuting young adults plan, track, and maintain healthier eating routines around their busy schedules.
-    </h1>
-    <p>Duration: 3 months</p>
+      </h1>
+      <p>Duration: 3 months</p>
+    </div>
+  
+    <section class="carousel1">
+      <button class="carousel-btn prev1">‹</button>
+  
+      <div class="carousel-track-container1">
+        <ul class="carousel-track1">
+          <li class="carousel-slide1">
+            <img src="bento/newentry.png" alt="bento new entry">
+          </li>
+          <li class="carousel-slide1">
+            <img src="bento/food diary hi-fi.png" alt="bento buddy diary">
+          </li>
+          <li class="carousel-slide1">
+            <img src="bento/AI chat.png" alt="bento buddy ai chat">
+          </li>
+        </ul>
+      </div>
+  
+      <button class="carousel-btn next1">›</button>
+    </section>
+  </section>
+  
+   
 </div>
   </section>
   
     <!-- CONTENT -->
   <section class="project-body1">
-
-    <div class="project-images-case1">
-     <img src="./food diary hi-fi.png" alt="bento buddy diary">
-     <img src="./AI chat.png" alt="bento buddy ai chat">
-   </div>
 
    <div class="project-info-box1">
      <h2>Project Overview</h2>
@@ -63,11 +82,11 @@
      </p>
    </div>
 
-   <div class="project-info-box1">
+   <!-- <div class="project-info-box1">
      <h2>Problem Statement</h2>
      <p>How might we make enforcing positive eating habits more manageable for commuting workers in their 20's who struggle with time management and eating healthy?
     </p>
-   </div>
+   </div> -->
 
    <div class="project-info-box1">
      <h2>Key Insights</h2>
@@ -81,17 +100,38 @@
    </div>
 
    <div class="project-images-low">
-    <img src="./low-fi 1.png" alt="djfh">
-    <img src="./low-fi 2.png" alt="hhgj">
-    <img src="./diagram 2.png" alt="ygk">
+    <img src="bento/low-fi 1.png" alt="djfh">
+    <img src="bento/low-fi 2.png" alt="hhgj">
+    <img src="bento/diagram 2.png" alt="ygk">
    </div>
 
-
-  
-
-
-
  </section>
+
+ <script>
+    const track = document.querySelector('.carousel-track1');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.next1');
+    const prevButton = document.querySelector('.prev1');
+  
+    let currentIndex = 0;
+  
+    function updateCarousel() {
+      const slideWidth = slides[0].getBoundingClientRect().width;
+      track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+    }
+  
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateCarousel();
+    });
+  
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateCarousel();
+    });
+  
+    window.addEventListener('resize', updateCarousel);
+  </script>
   
   </body>
-  </html>
+ </html>

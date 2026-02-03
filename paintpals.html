@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Nawal Rehman">
+  <meta name="description" content="PaintPals Case Study">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PaintPals | Nawal Rehman</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="project-page paint-page">
+
+    <!-- NAVBAR -->
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+    
+        <div class="dropdown">
+          <a href="myprojects.html" class="dropdown-toggle">My Projects ▾</a>
+    
+          <div class="dropdown-menu">
+            <a href="crowdy.html">Crowdy </a>
+            <a href="bentobuddy.html">BentoBuddy </a>
+            <a href="paintpals.html">PaintPals </a>
+          </div>
+      </div> 
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+
+<section class="project-hero2">
+  <div class="project-hero-text2">
+  <p>PaintPals</p>
+  <h1 class="project-subtitle2">
+    A collaborative drawing app that turns art into a social, playful experience.
+  </h1>
+  <p>Duration: 3 days</p>
+
+  <div class="project-images-case2">
+      <img src="paintpals/Sign Up.png" alt="signup">
+     </div>
+ 
+</div>
+</section>
+
+  <!-- CONTENT -->
+
+  <section class="project-info-grid">
+    <div class="project-info-box3">
+       <h2> Goals</h2>
+        <p> 🎨 Make art more social and interactive </p>
+        <p> 🎨 Lower the barrier to collaborative creation </p>
+        <p> 🎨 Encourage creativity through time & turns </p>
+    
+    </div>
+    
+     <div class="project-info-box3">
+       <h2> Constraints </h2>
+       <p> 🖌️ 3-day time limit </p>
+       <p> 🖌️ Rapid ideation & decision-making</p>
+       <p> 🖌️ Team collaboration </p>
+    
+     </div>
+    
+     <div class="project-info-box3">
+        <h2> Key Insights</h2>
+        <p> 🖌️ Informal discussions with peers </p>
+        <p> 🖌️ Observations from existing drawing apps </p>
+        <p> 🖌️ Assumptions validated through quick feedback</p>
+      </div>
+    
+      <div class="project-info-box3">
+        <h2> My Role & Teams </h2>
+       <p> 🎨 UX/UI design </p>
+       <p> 🎨 Collaboration & iteration </p>
+       <p> 🎨 Wireframes & visual design </p>
+       <p> 🎨 Team of 3 designers</p>
+      </div>
+    
+    </section>
+
+<section class="project-body2">
+
+ <div class="project-info-box2">
+   <h2>Project Overview</h2>
+   <p> PaintPals is a collaborative drawing app designed to make creating art more social and playful. Built during a 3-day designathon, the app allows users to draw individually, share artwork with friends, and collaborate through a timed, turn-based game mode that results in a single shared drawing. </p>
+ </div>
+
+ <div class="project-info-box2">
+    <h2>The Problem</h2>
+    <p> Drawing is often a solo activity, and many creative apps focus on individual creation rather than shared experiences. We wanted to explore how collaboration and light gamification could make art more social and engaging.</p>
+  </div>
+
+<section class="carousel">
+    <button class="carousel-btn prev">‹</button>
+  
+    <div class="carousel-track-container">
+      <ul class="carousel-track">
+        <li class="carousel-slide">
+          <img src="paintpals/Canvas.png" alt="PaintPals screen 1">
+        </li>
+        <li class="carousel-slide">
+          <img src="paintpals/Canvas H Settings.png" alt="PaintPals screen 2">
+        </li>
+        <li class="carousel-slide">
+          <img src="paintpals/H Gamemode 1.png" alt="PaintPals screen 3">
+        </li>
+        <li class="carousel-slide">
+            <img src="paintpals/H Gamemode 2.png" alt="PaintPals screen 4">
+          </li>
+      </ul>
+    </div>
+  
+    <button class="carousel-btn next">›</button>
+  </section>
+
+
+</section>
+
+<script>
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.next');
+    const prevButton = document.querySelector('.prev');
+  
+    let currentIndex = 0;
+  
+    function updateCarousel() {
+      const slideWidth = slides[0].getBoundingClientRect().width;
+      track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+    }
+  
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateCarousel();
+    });
+  
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateCarousel();
+    });
+  
+    window.addEventListener('resize', updateCarousel);
+  </script>
+  
+
+</body>
